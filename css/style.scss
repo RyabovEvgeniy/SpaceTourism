@@ -1,0 +1,91 @@
+[class*="__container"] {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0px 10px;
+}
+
+// [class*="__container-big"] {
+// 	max-width: 1490px;
+// 	margin: 0 auto;
+// 	padding: 0px 10px;
+// }
+
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+.main {
+	flex: 1 1 auto;
+}
+
+// Подключение локальных шрифтов
+@font-face {
+	font-family: "Space Age";
+	src: url("../fonts/Space-age.woff2") format("woff2"), url("../fonts/Space-age.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "San Francisco Pro Display";
+	src: url("../fonts/SF-Pro-Display-Bold.woff2") format("woff2"),
+		url("../fonts/SF-Pro-Display-Bold.woff") format("woff");
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "San Francisco Pro Display";
+	src: url("../fonts/SF-Pro-Display-Regular.woff2") format("woff2"),
+		url("../fonts/SF-Pro-Display-Regular.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+// Colors
+$redColor: #cb0e0e;
+$whiteColor: #fff;
+$bluekColor: #036cca;
+
+// Заголовки
+.title {
+	font-family: "Space Age", sans-serif;
+	font-size: 110px;
+	line-height: 1;
+}
+.subtitle {
+	font-family: "Space Age", sans-serif;
+	font-size: 48px;
+	line-height: 1;
+}
+.content-title {
+	font-family: "San Francisco Pro Display", sans-serif;
+	font-weight: 700;
+	font-size: 30px;
+	line-height: 1;
+}
+
+// Кнопки
+.btn {
+	font-family: "San Francisco Pro Display", sans-serif;
+	font-size: 18px;
+	line-height: 1.16;
+	text-transform: uppercase;
+	padding: 19px 5px 20px 5px;
+	cursor: pointer;
+}
+
+//
+body {
+	font-family: "San Francisco Pro Display", sans-serif;
+	// font-family: 'Roboto', sans-serif;
+	// font-family: "Space Age", sans-serif;
+	color: $whiteColor;
+	font-size: 16px;
+	line-height: 1.9;
+}

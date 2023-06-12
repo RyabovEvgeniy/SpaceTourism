@@ -1,0 +1,79 @@
+[class*=__container] {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0px 10px;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+@font-face {
+  font-family: "Space Age";
+  src: url("../fonts/Space-age.woff2") format("woff2"), url("../fonts/Space-age.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "San Francisco Pro Display";
+  src: url("../fonts/SF-Pro-Display-Bold.woff2") format("woff2"), url("../fonts/SF-Pro-Display-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "San Francisco Pro Display";
+  src: url("../fonts/SF-Pro-Display-Regular.woff2") format("woff2"), url("../fonts/SF-Pro-Display-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+.title {
+  font-family: "Space Age", sans-serif;
+  font-size: 110px;
+  line-height: 1;
+}
+
+.subtitle {
+  font-family: "Space Age", sans-serif;
+  font-size: 48px;
+  line-height: 1;
+}
+
+.content-title {
+  font-family: "San Francisco Pro Display", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 1;
+}
+
+.btn {
+  font-family: "San Francisco Pro Display", sans-serif;
+  font-size: 18px;
+  line-height: 1.16;
+  text-transform: uppercase;
+  padding: 19px 5px 20px 5px;
+  cursor: pointer;
+}
+
+body {
+  font-family: "San Francisco Pro Display", sans-serif;
+  color: #fff;
+  font-size: 16px;
+  line-height: 1.9;
+}
