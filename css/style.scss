@@ -22,8 +22,8 @@
 
 // Подключение локальных шрифтов
 @font-face {
-	font-family: "Space Age";
-	src: url("../fonts/Space-age.woff2") format("woff2"), url("../fonts/Space-age.woff") format("woff");
+	font-family: "Space Age Cyrillic";
+	src: url("../fonts/SpaceAgeCyrillic.woff2") format("woff2"), url("../fonts/SpaceAgeCyrillic.woff") format("woff");
 	font-weight: normal;
 	font-style: normal;
 	font-display: swap;
@@ -54,12 +54,12 @@ $bluekColor: #036cca;
 
 // Заголовки
 .title {
-	font-family: "Space Age", sans-serif;
+	font-family: "Space Age Cyrillic", sans-serif;
 	font-size: 110px;
 	line-height: 1;
 }
 .subtitle {
-	font-family: "Space Age", sans-serif;
+	font-family: "Space Age Cyrillic", sans-serif;
 	font-size: 48px;
 	line-height: 1;
 }
@@ -77,6 +77,8 @@ $bluekColor: #036cca;
 	line-height: 1.16;
 	text-transform: uppercase;
 	padding: 19px 5px 20px 5px;
+	border: 1px solid $whiteColor;
+	background-color: transparent;
 	cursor: pointer;
 }
 
@@ -88,4 +90,131 @@ body {
 	color: $whiteColor;
 	font-size: 16px;
 	line-height: 1.9;
+}
+
+.main__text {
+	font-family: "Space Age Cyrillic", sans-serif;
+	color: $bluekColor;
+}
+
+// header
+
+.header {
+	position: absolute;
+	right: 0;
+	left: 0;
+	padding: 80px 0;
+
+	// .header__container
+
+	&__container {
+	}
+
+	// .header__inner
+
+	&__inner {
+		display: flex;
+		align-items: center;
+	}
+}
+.menu {
+	flex: 1 1 auto;
+	display: flex;
+	align-items: center;
+	gap: 30px;
+
+	// .menu__item
+
+	&__item {
+	}
+
+	// .menu__link
+
+	&__link {
+		text-transform: uppercase;
+		font-size: 18px;
+		line-height: 1.17;
+		&_active {
+			color: $redColor;
+		}
+	}
+}
+
+.phone {
+	font-size: 24px;
+	line-height: 1.2;
+	margin-right: 22px;
+}
+.logo {
+}
+
+// space
+.space {
+	background: url("../img/space-bg.jpg") center / cover no-repeat;
+	padding: 403px 0 142px;
+
+	// .space__container
+
+	&__container {
+	}
+
+	// .space__inner
+
+	&__inner {
+		display: flex;
+		flex-direction: column;
+	}
+
+	// .space__content-left
+
+	&__content-left {
+		flex: 0 0 600px;
+		display: flex;
+		flex-direction: column;
+		span {
+			font-size: 60px;
+			line-height: 1;
+		}
+	}
+
+	// .space__title
+
+	&__title {
+		margin-bottom: 15px;
+	}
+
+	&__box {
+		&-item {
+			display: inline-block;
+			font-size: 24px;
+			line-height: 1.2;
+			&:not(:last-child) {
+				margin-right: 42px;
+			}
+		}
+	}
+
+	// .space__link
+
+	&__link {
+		min-width: 600px;
+		align-self: flex-start;
+		margin-top: 50px;
+		text-align: center;
+	}
+
+	// .space__content-right
+
+	&__content-right {
+		align-self: flex-end;
+		display: flex;
+	}
+
+	// .space__text
+
+	&__text {
+		max-width: 165px;
+		font-size: 14px;
+		line-height: 1.2;
+	}
 }
