@@ -76,10 +76,13 @@ $bluekColor: #036cca;
 	font-size: 18px;
 	line-height: 1.16;
 	text-transform: uppercase;
+	text-align: center;
 	padding: 19px 5px 20px 5px;
 	border: 1px solid $whiteColor;
 	background-color: transparent;
 	cursor: pointer;
+	display: inline-block;
+	min-width: 300px;
 }
 
 //
@@ -180,6 +183,7 @@ body {
 	// .space__title
 
 	&__title {
+		// align-self: flex-start;
 		margin-bottom: 15px;
 	}
 
@@ -200,7 +204,8 @@ body {
 		min-width: 600px;
 		align-self: flex-start;
 		margin-top: 50px;
-		text-align: center;
+		padding: 15px 0 16px 0;
+		// text-align: center;
 	}
 
 	// .space__content-right
@@ -216,5 +221,80 @@ body {
 		max-width: 165px;
 		font-size: 14px;
 		line-height: 1.2;
+	}
+}
+
+// about
+.about {
+	background: url("../img/about-bg.jpg") center / cover no-repeat;
+	padding: 100px 0;
+
+	// .about__container
+
+	&__container {
+	}
+
+	// .about__title
+
+	&__title {
+		margin-bottom: 100px;
+	}
+}
+
+.galactic {
+	display: flex;
+	justify-content: space-between;
+	// align-items: center;
+
+	// .galactic__img
+
+	&__img {
+	}
+
+	// .galactic__content
+
+	&__content {
+		flex: 0 1 601px;
+	}
+
+	// .galactic__desc
+
+	&__desc {
+		margin-bottom: 50px;
+	}
+}
+.content-galactic {
+	span {
+		display: inline-block;
+		color: $bluekColor;
+		font-size: 12px;
+		line-height: 1.7;
+		text-transform: uppercase;
+		margin-bottom: 30px;
+	}
+
+	// .content-galactic__title
+
+	&__title {
+		margin-bottom: 5px;
+	}
+
+	// .content-galactic__link
+
+	&__link {
+		
+	}
+}
+
+.desc-galactic {
+	display: flex;
+	gap: 53px;
+	// justify-content: space-between;
+	// .desc-galactic__items
+
+	&__item {
+		flex: 0 1 165px;
+		font-size: 16px;
+		line-height: 1.18;
 	}
 }

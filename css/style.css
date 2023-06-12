@@ -67,10 +67,13 @@
   font-size: 18px;
   line-height: 1.16;
   text-transform: uppercase;
+  text-align: center;
   padding: 19px 5px 20px 5px;
   border: 1px solid #fff;
   background-color: transparent;
   cursor: pointer;
+  display: inline-block;
+  min-width: 300px;
 }
 
 body {
@@ -172,7 +175,7 @@ body {
   -ms-flex-item-align: start;
       align-self: flex-start;
   margin-top: 50px;
-  text-align: center;
+  padding: 15px 0 16px 0;
 }
 .space__content-right {
   -ms-flex-item-align: end;
@@ -185,4 +188,54 @@ body {
   max-width: 165px;
   font-size: 14px;
   line-height: 1.2;
+}
+
+.about {
+  background: url("../img/about-bg.jpg") center/cover no-repeat;
+  padding: 100px 0;
+}
+.about__title {
+  margin-bottom: 100px;
+}
+
+.galactic {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.galactic__content {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 601px;
+          flex: 0 1 601px;
+}
+.galactic__desc {
+  margin-bottom: 50px;
+}
+
+.content-galactic span {
+  display: inline-block;
+  color: #036cca;
+  font-size: 12px;
+  line-height: 1.7;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+.content-galactic__title {
+  margin-bottom: 5px;
+}
+.desc-galactic {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 53px;
+}
+.desc-galactic__item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 165px;
+          flex: 0 1 165px;
+  font-size: 16px;
+  line-height: 1.18;
 }
