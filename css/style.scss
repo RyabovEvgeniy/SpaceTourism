@@ -241,7 +241,7 @@ body {
 	}
 }
 
-.galactic, .origin {
+.galactic, .origin, .spacex {
 	display: flex;
 	justify-content: space-between;
 	margin-bottom: 150px;
@@ -270,7 +270,7 @@ body {
 }
 
 
-.content-galactic, .content-origin {
+.content-galactic, .content-origin, .content-spacex {
 	span {
 		display: inline-block;
 		color: $bluekColor;
@@ -292,7 +292,7 @@ body {
 	}
 }
 
-.desc-galactic, .desc-origin {
+.desc-galactic, .desc-origin, .desc-spacex {
 	display: flex;
 	gap: 53px;
 	
@@ -305,7 +305,7 @@ body {
 	}
 }
 
-.table-galactic, .table-origin {
+.table-galactic, .table-origin, .table-spacex {
 	border-collapse: collapse;
 	width: 100%;
 	max-width: 100%;
@@ -345,4 +345,8 @@ body {
 	font-size: 14px;
 	line-height: 1.17;
 	margin-bottom: 50px;
+}
+
+.spacex {
+	margin-bottom: 0;
 }

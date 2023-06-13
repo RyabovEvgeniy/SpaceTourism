@@ -198,7 +198,7 @@ body {
   margin-bottom: 100px;
 }
 
-.galactic, .origin {
+.galactic, .origin, .spacex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -207,19 +207,19 @@ body {
           justify-content: space-between;
   margin-bottom: 150px;
 }
-.galactic__content, .origin__content {
+.galactic__content, .origin__content, .spacex__content {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 601px;
           flex: 0 1 601px;
 }
-.galactic__desc, .origin__desc {
+.galactic__desc, .origin__desc, .spacex__desc {
   margin-bottom: 50px;
 }
-.galactic__table, .origin__table {
+.galactic__table, .origin__table, .spacex__table {
   margin-bottom: 50px;
 }
 
-.content-galactic span, .content-origin span {
+.content-galactic span, .content-origin span, .content-spacex span {
   display: inline-block;
   color: #036cca;
   font-size: 12px;
@@ -227,16 +227,16 @@ body {
   text-transform: uppercase;
   margin-bottom: 30px;
 }
-.content-galactic__title, .content-origin__title {
+.content-galactic__title, .content-origin__title, .content-spacex__title {
   margin-bottom: 5px;
 }
-.desc-galactic, .desc-origin {
+.desc-galactic, .desc-origin, .desc-spacex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 53px;
 }
-.desc-galactic__item, .desc-origin__item {
+.desc-galactic__item, .desc-origin__item, .desc-spacex__item {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 165px;
           flex: 0 1 165px;
@@ -244,30 +244,30 @@ body {
   line-height: 1.18;
 }
 
-.table-galactic, .table-origin {
+.table-galactic, .table-origin, .table-spacex {
   border-collapse: collapse;
   width: 100%;
   max-width: 100%;
 }
-.table-galactic__thead, .table-origin__thead {
+.table-galactic__thead, .table-origin__thead, .table-spacex__thead {
   border-top: 1px solid #ffffff;
   border-bottom: 1px solid #ffffff;
 }
-.table-galactic__thead th, .table-origin__thead th {
+.table-galactic__thead th, .table-origin__thead th, .table-spacex__thead th {
   font-weight: 400;
   padding: 10px 0;
 }
-.table-galactic__tbody, .table-origin__tbody {
+.table-galactic__tbody, .table-origin__tbody, .table-spacex__tbody {
   text-align: center;
 }
-.table-galactic__tbody td, .table-origin__tbody td {
+.table-galactic__tbody td, .table-origin__tbody td, .table-spacex__tbody td {
   font-weight: 700;
   font-size: 36px;
 }
-.table-galactic__tfoot, .table-origin__tfoot {
+.table-galactic__tfoot, .table-origin__tfoot, .table-spacex__tfoot {
   text-align: center;
 }
-.table-galactic__tfoot td, .table-origin__tfoot td {
+.table-galactic__tfoot td, .table-origin__tfoot td, .table-spacex__tfoot td {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.2;
@@ -284,4 +284,8 @@ body {
   font-size: 14px;
   line-height: 1.17;
   margin-bottom: 50px;
+}
+
+.spacex {
+  margin-bottom: 0;
 }
