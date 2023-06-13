@@ -198,27 +198,28 @@ body {
   margin-bottom: 100px;
 }
 
-.galactic {
+.galactic, .origin {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-bottom: 150px;
 }
-.galactic__content {
+.galactic__content, .origin__content {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 601px;
           flex: 0 1 601px;
 }
-.galactic__desc {
+.galactic__desc, .origin__desc {
   margin-bottom: 50px;
 }
-.galactic__table {
+.galactic__table, .origin__table {
   margin-bottom: 50px;
 }
 
-.content-galactic span {
+.content-galactic span, .content-origin span {
   display: inline-block;
   color: #036cca;
   font-size: 12px;
@@ -226,16 +227,16 @@ body {
   text-transform: uppercase;
   margin-bottom: 30px;
 }
-.content-galactic__title {
+.content-galactic__title, .content-origin__title {
   margin-bottom: 5px;
 }
-.desc-galactic {
+.desc-galactic, .desc-origin {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 53px;
 }
-.desc-galactic__item {
+.desc-galactic__item, .desc-origin__item {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 165px;
           flex: 0 1 165px;
@@ -243,34 +244,44 @@ body {
   line-height: 1.18;
 }
 
-.table-galactic {
+.table-galactic, .table-origin {
   border-collapse: collapse;
   width: 100%;
   max-width: 100%;
 }
-.table-galactic__thead {
+.table-galactic__thead, .table-origin__thead {
   border-top: 1px solid #ffffff;
   border-bottom: 1px solid #ffffff;
-  text-align: left;
 }
-.table-galactic__thead th {
+.table-galactic__thead th, .table-origin__thead th {
   font-weight: 400;
   padding: 10px 0;
 }
-.table-galactic__tbody {
+.table-galactic__tbody, .table-origin__tbody {
   text-align: center;
 }
-.table-galactic__tbody td {
+.table-galactic__tbody td, .table-origin__tbody td {
   font-weight: 700;
   font-size: 36px;
 }
-.table-galactic__tfoot {
+.table-galactic__tfoot, .table-origin__tfoot {
   text-align: center;
 }
-.table-galactic__tfoot td {
+.table-galactic__tfoot td, .table-origin__tfoot td {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.2;
   border-bottom: 1px solid #ffffff;
   padding-bottom: 7px;
+}
+
+.table-origin {
+  margin-bottom: 20px;
+}
+
+.origin__meta {
+  color: #E5E5E5;
+  font-size: 14px;
+  line-height: 1.17;
+  margin-bottom: 50px;
 }
