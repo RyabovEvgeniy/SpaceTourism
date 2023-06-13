@@ -262,6 +262,10 @@ body {
 	&__desc {
 		margin-bottom: 50px;
 	}
+
+	&__table {
+		margin-bottom: 50px;
+	}
 }
 .content-galactic {
 	span {
@@ -282,7 +286,6 @@ body {
 	// .content-galactic__link
 
 	&__link {
-		
 	}
 }
 
@@ -296,5 +299,37 @@ body {
 		flex: 0 1 165px;
 		font-size: 16px;
 		line-height: 1.18;
+	}
+}
+
+.table-galactic {
+	border-collapse: collapse;
+	width: 100%;
+	max-width: 100%;
+	&__thead {
+		border-top: 1px solid #ffffff;
+		border-bottom: 1px solid #ffffff;
+		text-align: left;
+		th {
+			font-weight: 400;
+			padding: 10px 0;
+		}
+	}
+	&__tbody {
+		text-align: center;
+		td {
+			font-weight: 700;
+			font-size: 36px;
+		}
+	}
+	&__tfoot {
+		text-align: center;
+		td {
+			font-weight: 700;
+			font-size: 14px;
+			line-height: 1.2;
+			border-bottom: 1px solid #ffffff;
+			padding-bottom: 7px;
+		}
 	}
 }
