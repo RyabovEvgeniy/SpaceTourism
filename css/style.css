@@ -314,3 +314,43 @@ body {
   max-width: 580px;
   margin-bottom: 100px;
 }
+.make {
+  padding: 100px 0 640px;
+  background: url("../img/make-bg.jpg") center/cover no-repeat;
+  position: relative;
+}
+.make::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(8.85%, #010203), color-stop(86.98%, rgba(1, 2, 3, 0)));
+  background: -o-linear-gradient(top, #010203 8.85%, rgba(1, 2, 3, 0) 86.98%);
+  background: linear-gradient(180deg, #010203 8.85%, rgba(1, 2, 3, 0) 86.98%);
+}
+.make__container {
+  position: relative;
+}
+.make__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.make__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  gap: 50px;
+}
+.make__text {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 162px;
+          flex: 0 1 162px;
+  font-size: 14px;
+  line-height: 1.12;
+}
