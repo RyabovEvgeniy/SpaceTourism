@@ -360,3 +360,28 @@ body {
 .spacex {
 	margin-bottom: 0;
 }
+
+// how
+.how {
+	text-align: center;
+	padding: 100px 0;
+	background: url('../img/how-bg.jpg') center / cover no-repeat;
+
+	// .how__container
+
+	&__container {
+	}
+
+	// .how__title
+
+	&__title {
+		text-align: left;
+		max-width: 580px;
+		margin-bottom: 100px;
+	}
+
+	&__img {
+		// display: inline-block;
+	}
+}
+
