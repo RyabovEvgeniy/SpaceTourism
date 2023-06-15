@@ -434,4 +434,91 @@ body {
 	}
 }
 
+// offer
+.offer {
+padding: 100px 0;
+background: url('../img/offer-bg.jpg') center / cover no-repeat;
+
+	// .offer__container
+
+	&__container {
+	}
+
+	&__title {
+		margin-bottom: 100px;
+		max-width: 470px;
+	}
+}
+.cards {
+	display: flex;
+	justify-content: space-between;
+
+	// .cards__item
+
+	&__item {
+		flex: 0 1 500px;
+	}
+}
+.item-card {
+
+	// .item-card__body
+
+	&__body {
+		border: 1px solid $whiteColor;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding: 43px 5px 38px;
+		margin-bottom: 35px;
+	}
+
+	// .item-card__text
+
+	&__text {
+		max-width: 227px;
+		font-size: 24px;
+		line-height: 1.2;
+		text-align: center;
+		margin-bottom: 146px;
+		span {
+			color: $redColor;
+		}
+	}
+
+	// .item-card__count
+
+	&__count {
+		font-size: 48px;
+		line-height: 1.18;
+		position: relative;
+		span {
+			position: absolute;
+			right: -60px;
+			top: -30px;
+			font-size: 14px;
+			line-height: 1.21;
+			&::before {
+				position: absolute;
+				content: '';
+				display: block;
+				width: 68px;
+				height: 1px;
+				top: 7px;
+				background-color: $redColor;
+				transform: rotate(17.1deg);
+			}
+		}
+	}
+
+	// .item-card__link
+
+	&__link {
+		display: block;
+	}
+}
+.btn {
+}
+
+
 
