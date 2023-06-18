@@ -517,7 +517,91 @@ background: url('../img/offer-bg.jpg') center / cover no-repeat;
 		display: block;
 	}
 }
-.btn {
+
+.services {
+	padding: 142px 0 200px;
+
+	// .services__title
+
+	&__title {
+		max-width: 600px;
+		margin-bottom: 82px;
+	}
+
+	// .services__inner
+
+	&__inner {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	// .services__list
+
+	&__list {
+	}
+
+	// .services__buttons
+
+	&__buttons {
+		align-self: flex-start;
+		flex: 0 0 500px;
+
+	}
+}
+
+.list-services {
+	padding-top: 15px;
+	font-size: 24px;
+	line-height: 1.2;
+
+	// .list-services__title
+
+	&__title {
+		margin-bottom: 25px;
+	}
+
+	// .list-services__item
+
+	&__item {
+		padding-left: 36px;
+		position: relative;
+		&::before {
+			position: absolute;
+			content: '';
+			display: block;
+			height: 20px;
+			width: 20px;
+			background-color: $whiteColor;
+			top: 0;
+			left: 0;
+			border-radius: 50%;
+		}
+	}
+
+	// .list-services__bottom
+
+	&__bottom {
+		font-size: 12px;
+		margin-top: 25px;
+	}
+}
+.buttons-services {
+	display: flex;
+	flex-direction: column;
+	gap: 49px;
+	position: relative;
+	&::before {
+		position: absolute;
+		content: url(../img/services-decor.png);
+		top: -130px;
+		right: 0;
+	}
+
+	// .buttons-services__btn
+
+	&__btn {
+	}
 }
 
 
